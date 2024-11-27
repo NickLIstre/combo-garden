@@ -1,2 +1,2 @@
-# combo-garden
+# Combo Garden
  
