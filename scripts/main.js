@@ -28,3 +28,21 @@ function celebrate() {
         });
     }
 
+const themeToggle = document.getElementById("theme-toggle");
+
+// Check if the user has a saved theme preference
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-theme");
+}
+
+// Toggle dark mode and save the preference
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  // Save the theme preference to localStorage
+  if (document.body.classList.contains("dark-theme")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.removeItem("theme");
+  }
+});
