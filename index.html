@@ -3,7 +3,7 @@
 <div id="mySidenav" class="sidenav">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<a href="#">Games</a>
-				<a href="pages/BeginnerGuide">Beginner Guide</a>
+				<a href="pages/BeginnerGuide.html">Beginner Guide</a>
 				<a href="#">Contact</a>
   				<a href="#">About Us</a>
 </div>
@@ -29,47 +29,57 @@
 		<h1>Combo Garden</h1>
 		<h2></h2>
 		<img id="roseImage" src="images/rose.png" alt="Horizontal rose image" />
+                <script>
+                const roseImage = document.querySelector("#roseImage");
+                roseImage.onclick = () => {
+                      const mySrc = roseImage.getAttribute("src");
+                            if (mySrc === "images/rose.png") {
+                                roseImage.setAttribute("src", "images/rose2.png");
+                            } else {
+                                roseImage.setAttribute("src", "images/rose.png");
+                            }
+                  };
+                </script>
 		<p>Welcome to Combo Garden! The home for all fighting game combos, whether flashy or optimal.</p>
 		<p>Choose your game below:</p>
-
 		<div class="row">
 			<div class="column">	
-				<a href="pages/BBCrossTagMain"> 
+				<a href="pages/BBCrossTagMain.html"> 
 				<img id="bbctLogo" src="images/BBCrossTag-logo.png" alt="BlazBlue Cross Tag Battle" />
 			</a></div>
 			<div class="column">
-				<a href="pages/DNFDMain">
+				<a href="pages/DNFDMain.html">
 				<img id="dnfdLogo" src="images/DNFD-logo.png" alt="DNF Duel" />
 			</a></div>
 			<div class="column">
-				<a href="pages/DBFZMain">
+				<a href="pages/DBFZMain.html">
 				<img id="dbfzLogo" src="images/DBFZ-logo.png" alt="Dragon Ball FighterZ" />
 			</a></div></div>
 			<br>
 		<div class="row">
 			<div class="column">
-				<a href="pages/P4ArenaMain">
+				<a href="pages/P4ArenaMain.html">
 				<img id="p4arenaLogo" src="images/P4ArenaUltimax-logo.png" alt="Persona 4 Arena Ultimax" />
 			</a></div>
 			<div class="column">
-				<a href="pages/GBFVRMain">
+				<a href="pages/GBFVRMain.html">
 				<img id="gbfvrLogo" src="images/GBFVR-logo.png" alt="Granblue Fantasy Versus Rising" />
 			</a></div>
 			<div class="column">
-				<a href="pages/GGStriveMain">
+				<a href="pages/GGStriveMain.html">
 				<img id="ggstriveLogo" src="images/GGStrive-logo.png" alt="Guilty Gear Strive" />
 			</a></div></div>
 		<div class="row">
 			<div class="column">
-				<a href="pages/GGXrdRev2Main">
+				<a href="pages/GGXrdRev2Main.html">
 				<img id="ggxrdr2Logo" src="images/GGXrdRev2-logo.png" alt="Guilty Gear Xrd Rev 2" />
 			</a></div>
 			<div class="column">
-				<a href="pages/MK1Main">
+				<a href="pages/MK1Main.html">
 				<img id="mk1Logo" src="images/MK1-logo.png" alt="Mortal Kombat 1" />
 			</a></div>
 			<div class="column">
-				<a href="pages/SF6Main">
+				<a href="pages/SF6Main.html">
 				<img id="sf6Logo" src="images/SF6-logo.png" alt="Street Fighter 6" />
 			</a></div></div>
 			<script src="scripts/main.js"></script>
