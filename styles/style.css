@@ -1,5 +1,14 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html{
 background-color: #5F8572;
+
 
 /* Default (Light Mode) */
 	body {
@@ -108,6 +117,8 @@ body.dark-theme {
   		flex: 33.33%;
   		padding: 5px;
 	}
+
+.navBar { width: 100%;}
 	
 	/* The side navigation menu */
 .sidenav {
@@ -148,8 +159,8 @@ body.dark-theme {
 }
 
 .nav-button {
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
     border: none;
     padding: 10px;
     cursor: pointer;
