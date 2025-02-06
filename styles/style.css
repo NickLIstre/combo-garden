@@ -12,17 +12,17 @@ background-color: #5F8572;
 
 /* Default (Light Mode) */
 	body {
- 		 width: 800px;
- 		 margin: 0 auto;
-		 background-color: #9FBFB5;
- 		 padding: 0 20px 20px 20px;
-  		 border: 5px solid black;
-		 transition: background-color 0.3s ease, color 0.3s ease;
+ 		 width: 600px !important;
+ 		 margin: 0 auto !important;
+		 background-color: #9FBFB5 !important;
+ 		 padding: 0 20px 20px 20px !important;
+  		 border: 5px solid black !important;
+		 transition: background-color 0.3s ease, color 0.3s ease !important;
 	}
 
 body.dark-theme {
-	background-color: #333333;
-  	color: #ffffff;
+	background-color: #333333 !important;
+  	color: #ffffff !important;
 }
 
 /*Title at top of page*/
