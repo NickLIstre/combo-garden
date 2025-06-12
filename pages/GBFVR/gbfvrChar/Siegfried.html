@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width-device-width" />
+		<title>Combo Garden | GBFVR</title>
+		<link href="../../styles/style.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+         <style> 
+            body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            }   
+
+            /* Style for navigation bar */
+            .charNavbar {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+            }
+    
+            .charNavbar a {
+                margin: 10px;
+                padding: 10px 15px;
+                background-color: #333;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                transition: background-color 0.3s;
+            }
+    
+            .charNavbar a:hover {
+                background-color: #575757;
+            }
+
+            #charContent {
+            margin-top: 20px;
+            padding: 20px;
+            min-height: 100px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        </style>
+    </head>
+	<body>
+        <div class="charNavbar">
+            <a href="#" onclick="changeContent('bnb')">BNB</a>
+            <a href="#" onclick="changeContent('optimal')">Optimal</a>
+            <a href="#" onclick="changeContent('flashy')">Flashy</a>
+        </div>
+
+        <div id="charContent">
+            <p>Please select what you are looking for</p>
+        </div>
+
+        <script>
+            function changeContent(page) {
+                let contentDiv = document.getElementById("charContent");
+    
+                // Fade out effect
+                contentDiv.style.opacity = 0;
+    
+                setTimeout(() => {
+                    // Change content
+                    if (page === 'home') {
+                        contentDiv.innerHTML = "<h2>Home Page</h2><p>Welcome to the homepage!</p>";
+                    } else if (page === 'about') {
+                        contentDiv.innerHTML = "<h2>About Us</h2><p>We are a company that values innovation.</p>";
+                    } else if (page === 'services') {
+                        contentDiv.innerHTML = "<h2>Our Services</h2><p>We offer web development and design services.</p>";
+                    }
+    
+                    // Fade in effect
+                    contentDiv.style.opacity = 1;
+                }, 300); // Delay content change to allow fade-out effect
+            }
+        </script>
+    </body>
+</html>
+
