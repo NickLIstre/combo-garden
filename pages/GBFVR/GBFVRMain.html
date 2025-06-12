@@ -4,51 +4,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width-device-width" />
 		<title>Combo Garden | GBFVR</title>
-		<link href="../styles/style.css" rel="stylesheet" />
+		<link href="../../styles/style.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-                 <style>
-        /* Style the body to center content */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Style the container of images */
-        .image-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
-            gap: 20px; /* Space between images */
-            padding: 20px;
-            justify-items: center; /* Centers the images horizontally */
-        }
-
-        /* Style for each image */
-        .image-container a img {
-            width: 100%; /* Make the image take the full width of the grid item */
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        /* Hover effect for images */
-        .image-container a img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Hover effect for images */
-        .image-container img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+        <body class="game-main-body"></body>
 	</head>
 	<body>
 		<img id="gbfvrLogo" src="../images/GBFVR-logo.png" alt="Granblue Fantasy Versus Rising" />
-         <div class="image-container">
+         <div class="game-main-image-container">
         <!-- Gran -->
         <a href="/gbfvrChar/Gran.html" target="_blank">
             <img src="https://via.placeholder.com/200x150" alt="Gran">
@@ -219,6 +183,6 @@
             <img src="https://via.placeholder.com/200x150" alt="Vikala">
         </a>
     </div>
-
+<script src="../../scripts/main.js"></script>
 	</body>
 </html>

@@ -178,3 +178,57 @@ body.dark-theme {
   .sidenav a {font-size: 18px;}
 }
 }
+
+/* Style the body to center content */
+        .game-main-body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style the container of images */
+        .game-main-image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
+            gap: 20px; /* Space between images */
+            padding: 20px;
+            justify-items: center; /* Centers the images horizontally */
+        }
+
+        /* Style for each image */
+        .game-main-image-container a img {
+            width: 100%; /* Make the image take the full width of the grid item */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for images */
+        .game-main-image-container a img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hover effect for images */
+        .game-main-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+		.game-choice {
+    		display: grid;
+    		grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    		gap: 24px;
+   			padding: 24px 0;
+    		justify-items: center;
+		}
+		.game-choice a img {
+   			width: 100%;
+    		max-width: 220px;
+    		border-radius: 8px;
+    		box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    		transition: transform 0.2s;
+		}
+		.game-choice a img:hover {
+    		transform: scale(1.05);
+		}
