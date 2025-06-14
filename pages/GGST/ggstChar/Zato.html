@@ -2,10 +2,10 @@
 <html lang="en-US">
 	<div id="mySidenav" class="sidenav">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="../../index.html">Games</a>
-				<a href="../../pages/BeginnerGuide.html">Beginner Guide</a>
-				<a href="../../pages/Contact.html">Contact</a>
-  				<a href="../../pages/AboutUs.html">About Us</a>
+				<a href="../../../index.html">Games</a>
+				<a href="../../../pages/BeginnerGuide.html">Beginner Guide</a>
+				<a href="../../../pages/Contact.html">Contact</a>
+  				<a href="../../../pages/AboutUs.html">About Us</a>
 </div>
 <!-- Use any element to open the sidenav -->
 			<span button class="nav-button" onclick="openNav()">Menu</button></span>
@@ -14,13 +14,55 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width-device-width" />
 		<title>Combo Garden | GGST Zato-1</title>
-		<link href="../styles/style.css" rel="stylesheet" />
+		<link href="../../../styles/style.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://nicklistre.github.io/combo-garden/favicon.ico?v=2"/>
 	</head>
 	<body>
-		<img id="Zato-1Strive" src="" alt="Zato-1 GG Strive" />
+		<img id="imgChar" src="../../../images/GGST/char/GGSTZato-1.png" alt="Zato-1 GG Strive" />
 		This page is under construction. Please check back later.
+
+		 <!-- Tag filter -->
+  <div id="tag-filters">
+    <label><input type="checkbox" value="BNB" /> BNB</label>
+    <label><input type="checkbox" value="flashy" /> Flashy</label>
+    <label><input type="checkbox" value="beginner" /> Beginner</label>
+    <label><input type="checkbox" value="advanced" /> Advanced</label>
+  </div>
+
+  <!-- Combos list -->
+  <div class="combo-card" data-tags="beginner flashy">
+  <h3>Easy Wall Combo</h3>
+  <div class="combo-content">
+    <video controls width="320">
+      <source src="../../../videos/aba_combo1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="notation">
+      <strong>Notation:</strong>
+      <p>5K > c.S > 2H > 236S > Wall Splat</p>
+    </div>
+  </div>
+  <p>A beginner-friendly combo that ends with a wall splat.</p>
+</div>
+
+
+    <div class="combo-card" data-tags="advanced">
+      <h3>Corner Pressure Loop</h3>
+      <div class="combo-content">
+      <video controls width="320">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="notation">
+      <strong>Notation:</strong>
+      <p>5K > c.S > 2H > 236S > Wall Splat</p>
+    </div>
+    </div>
+      <p>High execution loop for corner pressure.</p>  
+  </div>
 	</body>
+	<script src="../../../scripts/main.js"></script>
 </html>

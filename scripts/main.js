@@ -35,3 +35,22 @@ themeToggle.addEventListener("click", () => {
     localStorage.removeItem("theme");
   }
 });
+
+  const checkboxes = document.querySelectorAll('#tag-filters input[type="checkbox"]');
+  const comboCards = document.querySelectorAll('.combo-card');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const selectedTags = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+      comboCards.forEach(card => {
+        const tags = card.dataset.tags.split(' ');
+        const matches = selectedTags.every(tag => tags.includes(tag));
+
+        card.style.display = selectedTags.length === 0 || matches ? '' : 'none';
+      });
+    });
+  });
+
