@@ -8,7 +8,7 @@
 
 html{
 background-color: #5F8572;
-
+}
 
 /* Default (Light Mode) */
 	body {
@@ -23,6 +23,9 @@ background-color: #5F8572;
 body.dark-theme {
 	background-color: #333333 !important;
   	color: #ffffff !important;
+}
+html.dark-theme {
+  background-color: #4b6659 !important;
 }
 
 /*Title at top of page*/
@@ -176,7 +179,6 @@ body.dark-theme {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
 }
 
 /* Style the body to center content */

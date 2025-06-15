@@ -19,21 +19,24 @@ function celebrate() {
 
 const themeToggle = document.getElementById("theme-toggle");
 
-// Check if the user has a saved theme preference
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark-theme");
-}
+function applyTheme(isDark) {
+  document.body.classList.toggle("dark-theme", isDark);
+  document.documentElement.classList.toggle("dark-theme", isDark);
 
-// Toggle dark mode and save the preference
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-
-  // Save the theme preference to localStorage
-  if (document.body.classList.contains("dark-theme")) {
+  if (isDark) {
     localStorage.setItem("theme", "dark");
   } else {
     localStorage.removeItem("theme");
   }
+}
+
+// Apply saved preference on page load
+applyTheme(localStorage.getItem("theme") === "dark");
+
+// Toggle theme on button click
+themeToggle.addEventListener("click", () => {
+  const isDark = !document.body.classList.contains("dark-theme");
+  applyTheme(isDark);
 });
 
   const checkboxes = document.querySelectorAll('#tag-filters input[type="checkbox"]');
