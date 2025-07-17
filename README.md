@@ -8,23 +8,23 @@ Perfect for beginners looking to learn bread-and-butter combos or experts seekin
 
 ---
 
-## 🎯 Features
+## Features
 
-- ✅ Upload combos with video links and descriptions
-- 🎭 Tag combos with difficulty or location (`Beginner`, `Advanced`, `Corner`, etc.)
-- 🧩 Filter by character and tag
-- 🌐 Built using **HTML/CSS/JavaScript** (no backend currently)
-- 🚀 Hosted on **GitHub Pages**
+-  Upload combos with video links and descriptions
+-  Tag combos with difficulty or location (`Beginner`, `Advanced`, `Corner`, etc.)
+-  Filter by character and tag
+-  Built using **HTML/CSS/JavaScript** (no backend currently)
+-  Hosted on **GitHub Pages**
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ![image](https://github.com/user-attachments/assets/0888c3c3-ff26-463e-80ab-5272e59a368f)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Vanilla **HTML**
 - **CSS** for styling and responsive layout
@@ -33,7 +33,7 @@ Perfect for beginners looking to learn bread-and-butter combos or experts seekin
 
 ---
 
-## 🔄 Future Plans
+## Future Plans
 
 - Create backend to allow users to upload their own combos and tag them
 - Allow for likes to boost useful or interesting combos
