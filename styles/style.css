@@ -73,59 +73,13 @@ html.dark-theme {
 		 width: 90%;
 		}
 
-/*Game list*/
-	#bbctLogo {
+/*Logo on "game"Main.html*/
+	#gameLogo {
 		 display: block;
                  margin: 0 auto;
 		 width: 80%;
 		}
 
-	#dnfdLogo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 80%;
-		}
-
-	#dbfzLogo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 80%;
-		}
-
-	#p4arenaLogo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 75%;
-		}
-
-	#gbfvrLogo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 100%;
-		}
-
-	#ggstriveLogo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 80%;
-		}
-
-	#ggxrdr2Logo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 80%;
-		}
-
-	#sf6Logo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 100%;
-		}
-	#mk1Logo {
-		 display: block;
-                 margin: 0 auto;
-		 width: 80%;
-		}
 
 	.row {
   		display: flex;
@@ -198,6 +152,7 @@ html.dark-theme {
   .sidenav a {font-size: 18px;}
 }
 
+/* .game-main: formats character grid on main game pages
 /* Style the body to center content */
         .game-main-body {
             font-family: Arial, sans-serif;
@@ -233,19 +188,20 @@ html.dark-theme {
             transform: scale(1.05);
         }
 
-		.game-choice {
-    		display: grid;
-    		grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    		gap: 24px;
-   			padding: 24px 0;
-    		justify-items: center;
-		}
-		.game-choice a img {
-   			width: 100%;
-    		max-width: 220px;
-    		border-radius: 8px;
-    		box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    		transition: transform 0.2s;
+/* .game-choice formats game grid on index.html */
+        .game-choice {
+    		  display: grid;
+    		  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    		  gap: 24px;
+   			  padding: 24px 0;
+    		  justify-items: center;
+		      }
+		    .game-choice a img {
+   			  width: 100%;
+    		  max-width: 220px;
+    		  border-radius: 8px;
+    		  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    		  transition: transform 0.2s;
 		}
 		.game-choice a img:hover {
     		transform: scale(1.05);
@@ -267,7 +223,8 @@ html.dark-theme {
       padding: 0.5rem;
       font-size: 1rem;
     }
-
+    
+/* Formats individual combos added to page */
     .combo-card {
   display: flex;
   flex-direction: column;
@@ -300,5 +257,57 @@ html.dark-theme {
   border-radius: 8px;
   /* border: 1px solid #333; */
   text-align: left;
+}
+
+.filter-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-family: sans-serif;
+}
+
+.filter-header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  border: 1px solid #333;
+  border-radius: 6px 6px 0 0;
+}
+
+.filter-panel {
+  background-color: #1a1a1a;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  border-top: none;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 0; /* remove unwanted spacing */
+  border-radius: 0 0 6px 6px;
+  color: white;
+}
+
+.filter-panel.show {
+  max-height: 500px; /* enough to show content */
+  padding: 1rem;
+  border-color: #333;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.filter-panel label {
+  display: inline-block;
+  margin: 0.5rem;
 }
 

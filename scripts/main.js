@@ -57,3 +57,10 @@ themeToggle.addEventListener("click", () => {
     });
   });
 
+  function toggleFilterPanel() {
+  const panel = document.getElementById('tag-filters');
+  const arrow = document.getElementById('arrow');
+  panel.classList.toggle('show');
+  arrow.innerHTML = panel.classList.contains('show') ? '&#x25B2;' : '&#x25BC;';
+}
+
