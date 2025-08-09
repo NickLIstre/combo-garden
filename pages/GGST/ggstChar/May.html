@@ -25,7 +25,11 @@
 		This page is under construction. Please check back later.
 
 		 <!-- Tag filter -->
-  <div id="tag-filters">
+  <div class="filter-container">
+  <div class="filter-header" onclick="toggleFilterPanel()">
+  Filter <span id="arrow">&#x25BC;</span>
+</div>
+  <div id="tag-filters" class="filter-panel">
     <label><input type="checkbox" value="BNB" /> BNB</label>
     <label><input type="checkbox" value="flashy" /> Flashy</label><br>
     <label><input type="checkbox" value="beginner" /> Beginner</label>
@@ -34,7 +38,7 @@
     <label><input type="checkbox" value="midscreen" /> Midscreen</label>
     <label><input type="checkbox" value="corner" /> Corner</label>
   </div>
-
+</div>
   <!-- Combos list -->
   <div class="combo-card" data-tags="beginner flashy">
   <h3>Easy Wall Combo</h3>
