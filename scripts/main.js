@@ -36,6 +36,7 @@ applyTheme(localStorage.getItem("theme") === "dark");
 // Toggle theme on button click
 themeToggle.addEventListener("click", () => {
   const isDark = !document.body.classList.contains("dark-theme");
+  themeToggle.textContent = isDark ? "🌙" : "☀️";
   applyTheme(isDark);
 });
 

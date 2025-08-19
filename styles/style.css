@@ -47,6 +47,26 @@ html.dark-theme {
   background-color: #4b6659 !important;
 }
 
+#theme-toggle {
+  position: absolute; 
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: transparent;
+  transform: scale(1.1);
+}
+
 /*Title at top of page*/
 	h1{ 
   		font-size: 100px;
